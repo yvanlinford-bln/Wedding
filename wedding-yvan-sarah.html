@@ -1,17 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yvan & Sarah's Wedding</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah & Yvan Wedding</title>
+  <style>
+    body { font-family: 'Georgia', serif; margin: 0; padding: 0; background: #f9f7f2; color: #2c2c2c; scroll-behavior: smooth; }
+    header { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); background-size: cover; color: white; }
+    h1 { margin: 0; font-size: 3.5em; letter-spacing: 1px; }
+    h2 { margin-bottom: 10px; }
+    nav { text-align: center; margin: 20px; position: sticky; top: 0; background: #f9f7f2; padding: 10px; }
+    button { margin: 5px; padding: 10px 18px; border: none; cursor: pointer; background: #2c2c2c; color: white; border-radius: 25px; }
+    a.nav-link { margin: 0 10px; text-decoration: none; color: #2c2c2c; font-size: 0.9em; }
+    section { padding: 70px 20px; max-width: 900px; margin: auto; text-align: center; }
+    a.button-link { display: inline-block; margin-top: 15px; padding: 12px 22px; background: #2c2c2c; color: white; text-decoration: none; border-radius: 25px; }
+    footer { text-align: center; padding: 30px; background: #e6dccf; }
+  </style>
 </head>
-<body>
-    <h1>Welcome to our Wedding!</h1>
-    <p>We are excited to invite you to the wedding of Yvan and Sarah!</p>
-    <p>Date: June 20, 2026</p>
-    <p>Location: Our beautiful venue</p>
-    <footer>
-        <p>More details to follow!</p>
-    </footer>
-</body>
+<body><header>
+  <h1 id="title">Sarah & Yvan</h1>
+  <p id="subtitle">7th August 2027 • Beaujolais, France</p>
+  <p id="countdown"></p>
+</header><nav>
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('fr')">FR</button><br>
+  <a class="nav-link" href="#details">Details</a>
+  <a class="nav-link" href="#schedule">Schedule</a>
+  <a class="nav-link" href="#menu">Menu</a>
+  <a class="nav-link" href="#accommodation">Stay</a>
+  <a class="nav-link" href="#faq">FAQ</a>
+  <a class="nav-link" href="#rsvp">RSVP</a>
+</nav><section id="details">
+  <h2 id="details-title">Wedding Details</h2>
+  <p id="details-text">The wedding will take place at Château de Varennes in Quincié-en-Beaujolais.<br><br><strong>Please note:</strong> This is NOT the Château de Varennes that appears first on Google.<br><br>
+  <a class="button-link" href="https://www.google.com/maps" target="_blank">View on Google Maps</a>
+  </p>
+</section><section id="schedule">
+  <h2 id="schedule-title">Schedule</h2>
+  <p id="schedule-text">Friday: Welcome drinks (details to be confirmed).<br><br>Saturday: Ceremony, reception and party.</p>
+</section><section id="menu">
+  <h2 id="menu-title">Menu</h2>
+  <p id="menu-text">Details coming soon.</p>
+</section><section id="accommodation">
+  <h2 id="accommodation-title">Accommodation</h2>
+  <p id="accommodation-text">We recommend booking early. Suggested areas: Quincié-en-Beaujolais, Belleville-en-Beaujolais and surrounding vineyards.</p>
+</section><section id="faq">
+  <h2 id="faq-title">FAQ</h2>
+  <p id="faq-text">
+    <strong>What should we do in the region?</strong><br>
+    Wine tastings, vineyard visits, local markets and countryside walks.<br><br>
+    <strong>Transport?</strong><br>
+    Details to come.<br><br>
+    <strong>Dress code?</strong><br>
+    To be confirmed.
+  </p>
+</section><section id="rsvp">
+  <h2 id="rsvp-title">RSVP</h2>
+  <p id="rsvp-text">Please confirm your attendance below.</p>
+  <a class="button-link" href="#" target="_blank">RSVP Here</a>
+</section><footer>
+  <p id="footer-text">We can't wait to celebrate with you in Beaujolais 🍷</p>
+</footer><script>
+  const weddingDate = new Date("August 7, 2027 16:00:00");
+  const countdown = document.getElementById("countdown");
+  setInterval(() => {
+    const now = new Date();
+    const diff = weddingDate - now;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    countdown.innerText = days + " days to go";
+  }, 1000);
+
+  const content = {
+    en: {
+      title: "Sarah & Yvan",
+      subtitle: "7th August 2027 • Beaujolais, France",
+      detailsTitle: "Wedding Details",
+      detailsText: "The wedding will take place at Château de Varennes in Quincié-en-Beaujolais.\n\nPlease note: This is NOT the Château de Varennes that appears first on Google.",
+      scheduleTitle: "Schedule",
+      scheduleText: "Friday: Welcome drinks. Saturday: Ceremony, reception and party.",
+      menuTitle: "Menu",
+      menuText: "Details coming soon.",
+      accommodationTitle: "Accommodation",
+      accommodationText: "Book early. Suggested areas: Quincié-en-Beaujolais and nearby.",
+      faqTitle: "FAQ",
+      faqText: "Things to do: wine tasting, villages, countryside. Transport & dress code TBC.",
+      rsvpTitle: "RSVP",
+      rsvpText: "Please confirm your attendance.",
+      footerText: "We can't wait to celebrate with you in Beaujolais"
+    },
+    fr: {
+      title: "Sarah & Yvan",
+      subtitle: "7 août 2027 • Beaujolais, France",
+      detailsTitle: "Détails",
+      detailsText: "Le mariage aura lieu au Château de Varennes à Quincié-en-Beaujolais.\n\nAttention : ce n'est PAS celui sur Google.",
+      scheduleTitle: "Programme",
+      scheduleText: "Vendredi : verre de bienvenue. Samedi : cérémonie et soirée.",
+      menuTitle: "Menu",
+      menuText: "À venir.",
+      accommodationTitle: "Hébergement",
+      accommodationText: "Réservez tôt. Zones : Quincié et alentours.",
+      faqTitle: "FAQ",
+      faqText: "Activités : vin, villages, nature. Transport & tenue à venir.",
+      rsvpTitle: "RSVP",
+      rsvpText: "Merci de confirmer.",
+      footerText: "Nous avons hâte de célébrer avec vous"
+    }
+  };
+
+  function setLanguage(lang) {
+    document.getElementById('title').innerText = content[lang].title;
+    document.getElementById('subtitle').innerText = content[lang].subtitle;
+    document.getElementById('details-title').innerText = content[lang].detailsTitle;
+    document.getElementById('details-text').innerText = content[lang].detailsText;
+    document.getElementById('schedule-title').innerText = content[lang].scheduleTitle;
+    document.getElementById('schedule-text').innerText = content[lang].scheduleText;
+    document.getElementById('menu-title').innerText = content[lang].menuTitle;
+    document.getElementById('menu-text').innerText = content[lang].menuText;
+    document.getElementById('accommodation-title').innerText = content[lang].accommodationTitle;
+    document.getElementById('accommodation-text').innerText = content[lang].accommodationText;
+    document.getElementById('faq-title').innerText = content[lang].faqTitle;
+    document.getElementById('faq-text').innerText = content[lang].faqText;
+    document.getElementById('rsvp-title').innerText = content[lang].rsvpTitle;
+    document.getElementById('rsvp-text').innerText = content[lang].rsvpText;
+    document.getElementById('footer-text').innerText = content[lang].footerText;
+  }
+</script></body>
 </html>
