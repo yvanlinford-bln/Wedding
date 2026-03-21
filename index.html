@@ -3,69 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yvan & Sarah's Wedding</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #35424a;
-            color: #ffffff;
-        }
-    </style>
+    <title>Wedding of Sarah and Yvan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Yvan & Sarah's Wedding</h1>
-        <p>Join us on our special day!</p>
+        <h1>Welcome to the Wedding of Sarah and Yvan</h1>
+        <p>Date: August 7th, 2027</p>
+        <p>Location: Château de Varennes, Quincie-en-Beaujolais, near Lyon</p>
+        <div>
+            <button onclick="toggleLanguage()">Toggle Language</button>
+        </div>
     </header>
-    <section>
-        <h2>Our Story</h2>
-        <p>Yvan and Sarah met in college and have been inseparable ever since. They share a love for travel, food, and adventure.</p>
-    </section>
-    <section>
-        <h2>Wedding Details</h2>
-        <p>Date: March 21, 2026</p>
-        <p>Venue: Beautiful Garden, City Name</p>
-        <p>Time: 4:00 PM</p>
-    </section>
-    <section>
-        <h2>RSVP</h2>
-        <p>Please let us know if you can make it to our wedding by filling out the form below:</p>
-        <form action="#">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="attending">Will you attend?</label><br>
-            <select id="attending" name="attending">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+    <main>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <p>Friday Drinks: Join us for drinks the night before!</p>
+            <p>Saturday Ceremony: 3 PM</p>
+            <p>Reception: Following the ceremony</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <p>Starter: Salad of the season</p>
+            <p>Main Course: Beef Bourguignon with seasonal vegetables</p>
+            <p>Dessert: Chocolate mousse</p>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p><strong>Q:</strong> What should I wear?</p>
+            <p><strong>A:</strong> Formal attire is encouraged!</p>
+            <p><strong>Q:</strong> Is there parking available?</p>
+            <p><strong>A:</strong> Yes, there is parking at the venue.</p>
+        </section>
+        <section id="accommodation">
+            <h2>Accommodation Recommendations</h2>
+            <p>For those needing a place to stay, we recommend the following: </p>
+            <ul>
+                <li>Hotel de Varennes</li>
+                <li>Le Château Hotel</li>
+                <li>Local Airbnbs</li>
+            </ul>
+        </section>
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="attending">Will you attend?</label>
+                <select id="attending" name="attending">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2026 Yvan & Sarah. All rights reserved.</p>
+        <p>&copy; 2026 Sarah and Yvan. All rights reserved.</p>
     </footer>
 </body>
 </html>
