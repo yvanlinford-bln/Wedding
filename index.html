@@ -3,78 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding</title>
+    <title>Sarah & Yvan's Wedding - Château de Varennes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Wedding!</h1>
-        <button id="toggle-lang">Français</button>
-    </header>
+    <div class="language-toggle">
+        <button id="en-btn">English</button>
+        <button id="fr-btn">Français</button>
+    </div>
 
-    <main>
-        <section id="venue">
-            <h2>Venue Information</h2>
-            <p>We are excited to celebrate our wedding at the beautiful <strong>Château de Varennes</strong> located in Quincié-en-Beaujolais. This stunning venue offers a picturesque backdrop for our special day.</p>
-        </section>
+    <h1 id="wedding-title">Sarah & Yvan's Wedding</h1>
+    <h2 id="venue">Château de Varennes, Quincié-en-Beaujolais, Rhône, France</h2>
 
-        <section id="schedule">
-            <h2>Wedding Schedule</h2>
-            <ul>
-                <li><strong>Cérémonie:</strong> 14:00</li>
-                <li><strong>Vin d'honneur:</strong> 16:00</li>
-                <li><strong>Diner:</strong> 18:00</li>
-                <li><strong>Soirée dansante:</strong> 20:00</li>
-            </ul>
-        </section>
+    <section id="schedule">
+        <h3>Schedule</h3>
+        <ul>
+            <li>Cérémonie</li>
+            <li>Vin d'honneur</li>
+            <li>Diner</li>
+            <li>Soirée dansante</li>
+        </ul>
+    </section>
 
-        <section id="menu">
-            <h2>Menu</h2>
-            <ul>
-                <li><strong>Entrée:</strong> Salad with vinaigrette</li>
-                <li><strong>Plat chaud:</strong> Beef Bourguignon</li>
-                <li><strong>Fromage:</strong> Selection of local cheeses</li>
-                <li><strong>Dessert:</strong> Chocolate mousse</li>
-            </ul>
-        </section>
+    <section id="menu">
+        <h3>Menu</h3>
+        <ul>
+            <li>Entrée: Palet gourmand foie gras de canard, artichauts fondants</li>
+            <li>Plat chaud: Volaille de Bresse à la crème AOP Etrez et aux morilles avec madeleines de pomme de terre et parfait d'épinard</li>
+            <li>Fromage: Assiette de deux fromages affinés et verrine de fromage blanc</li>
+            <li>Dessert: À confirmer</li>
+        </ul>
+    </section>
 
-        <section id="accommodations">
-            <h2>Accommodations</h2>
-            <p>For those traveling from afar, here are some recommended accommodations near Quincié-en-Beaujolais:</p>
-            <ul>
-                <li>Hotel Le Savigny</li>
-                <li>La Maison des Vignes</li>
-                <li>Chateau de Varennes (for convenience!)</li>
-            </ul>
-        </section>
+    <section id="accommodations">
+        <h3>Accommodations</h3>
+        <ul>
+            <li>Le Relais de Monthelon</li>
+            <li>Hotel Le Saint-George</li>
+            <li>Le Clos de la Fontaine</li>
+            <li>Airbnb options available</li>
+        </ul>
+    </section>
 
-        <section id="faq">
-            <h2>FAQ</h2>
-            <h3>Transportation</h3>
-            <p>For guests arriving by air, there are shuttle services available from Lyon Airport. Please contact us for details.</p>
-        </section>
+    <section id="faq">
+        <h3>FAQ</h3>
+        <ul>
+            <li>Lyon Saint-Exupéry Airport info</li>
+            <li>Shuttle service for international guests</li>
+            <li>Parking and transportation options</li>
+        </ul>
+    </section>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <img src="image1.jpg" alt="Wedding venue">
-            <img src="image2.jpg" alt="Another beautiful image">
-        </section>
+    <section id="gallery">
+        <h3>Gallery</h3>
+        <img src="beaujolais_vineyard.jpg" alt="Beaujolais Vineyard" />
+    </section>
 
-        <section id="rsvp">
-            <h2>RSVP</h2>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="attending">Will you attend?</label>
-                <select id="attending" name="attending">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <a href="https://goo.gl/maps/example" target="_blank">Find us on Google Maps</a>
 </body>
 </html>
