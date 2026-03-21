@@ -1,14 +1,52 @@
-<section id="accommodation">
-    <h2>Accommodation</h2>
-    <div>
-        <h3>Hotel Sunshine</h3>
-        <p>Beautiful views and comfortable rooms.</p>
-        <p><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Sunshine">Find contact details</a></p>
-    </div>
-    <div>
-        <h3>Cozy Inn</h3>
-        <p>Family-friendly accommodations with great amenities.</p>
-        <p><a href="https://www.google.com/maps/search/?api=1&query=Cozy+Inn">Find contact details</a></p>
-    </div>
-    <!-- Add more accommodations as needed -->
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yvan & Sarah's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Wedding</h1>
+        <p>Join us in celebrating the union of Yvan and Sarah!</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Yvan and Sarah met in university and have been inseparable since. We are excited to celebrate our love with you!</p>
+        </section>
+        <section id="details">
+            <h2>Wedding Details</h2>
+            <p>Date: June 25, 2026</p>
+            <p>Venue: The Grand Hall
+            <br>123 Wedding St.<br>City, State</p>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <ul>
+                <li>3:00 PM - Ceremony</li>
+                <li>5:00 PM - Reception</li>
+                <li>8:00 PM - Dance</li>
+            </ul>
+        </section>
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <p>Please let us know if you can make it!</p>
+            <form action="#"> 
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="attending">Will you attend?</label><br>
+                <select id="attending" name="attending">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at: <a href="mailto:yvan@example.com">yvan@example.com</a></p>
+    </footer>
+</body>
+</html>
