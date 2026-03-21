@@ -3,30 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding</title>
+    <title>Wedding Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fffbf0; /* Light cream */
-            color: #5d3b1f; /* Dark brown */
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5e6d3;
+            color: #333;
         }
-        h1 {
-            color: #eec6a8; /* Blush pink */
+        header {
+            background-color: #8b6f47;
+            color: #d4af91;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        /* Additional styling here */
+        nav a {
+            color: #d4af91;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #a0826d;
+        }
+        .section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+        footer {
+            background-color: #8b6f47;
+            color: #d4af91;
+            text-align: center;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Wedding!</h1>
-    <div>
-        <h2>Location</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345091528!2d144.9537353153151!3d-37.81627997975141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11d197%3A0xcab7d8f6d43b7338!2sYour%20Wedding%20Location!5e0!3m2!1sen!2sau!4v1614800878304!5m2!1sen!2sau"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"></iframe>
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+        <nav>
+            <a href="#venue">Venue</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#menu">Menu</a>
+            <a href="#accommodations">Accommodations</a>
+            <a href="#faq">FAQ</a>
+            <a href="#rsvp">RSVP</a>
+        </nav>
+    </header>
+
+    <div class="section" id="venue">
+        <h2>Venue</h2>
+        <p>Join us at the beautiful venue located at <a href="https://maps.app.goo.gl/KTXfbYKfgtnXuryv5">this link</a>.</p>
     </div>
+    <div class="section" id="schedule">
+        <h2>Schedule</h2>
+        <p>Here is the schedule of events...</p>
+    </div>
+    <div class="section" id="menu">
+        <h2>Menu</h2>
+        <p>Explore our delightful menu...</p>
+    </div>
+    <div class="section" id="accommodations">
+        <h2>Accommodations</h2>
+        <p>Find nearby accommodations...</p>
+    </div>
+    <div class="section" id="faq">
+        <h2>FAQ</h2>
+        <p>Answers to frequently asked questions...</p>
+    </div>
+    <div class="section" id="rsvp">
+        <h2>RSVP</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>Thank you for being part of our special day!</p>
+    </footer>
 </body>
 </html>
