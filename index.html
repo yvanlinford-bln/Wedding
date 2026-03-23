@@ -4,119 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleLanguage() {
-            const englishSection = document.getElementById('english');
-            const frenchSection = document.getElementById('french');
-            if (englishSection.style.display === 'none') {
-                englishSection.style.display = 'block';
-                frenchSection.style.display = 'none';
-            } else {
-                englishSection.style.display = 'none';
-                frenchSection.style.display = 'block';
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Wedding</h1>
-        <button onclick="toggleLanguage()">Toggle Language</button>
+        <h1>Welcome to Our Wedding!</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#accommodations">Accommodations</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="english">
-        <h2>Venue: Château de Varennes</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.6638509888916!2d4.444828315527915!3d46.04511207914671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f7b5de421f7351%3A0x79645c2687644c5e!2sCh%C3%A2teau%20de%20Varennes!5e0!3m2!1sen!2sfr!4v1610529341120!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="menu">
+        <h2>Menu Details</h2>
+        <p>[Insert full menu details here]</p>
+    </section>
 
-        <h2>Schedule</h2>
-        <ul>
-            <li>Cérémonie: 2 PM</li>
-            <li>Vin d'Honneur: 4 PM</li>
-            <li>Dîner: 6 PM</li>
-            <li>Soirée Dansante: 8 PM</li>
-        </ul>
-
-        <h2>Menu</h2>
-        <ul>
-            <li>Palet Gourmand Foie Gras</li>
-            <li>Volaille de Bresse à la Crème</li>
-            <li>Fromage</li>
-            <li>Dessert</li>
-        </ul>
-
+    <section id="accommodations">
         <h2>Accommodations</h2>
-        <ul>
-            <li>Le Relais de Monthelon</li>
-            <li>Château de Varennes</li>
-            <li>Hotel Le Saint-George</li>
-            <li>Le Clos de la Fontaine</li>
-            <li>Airbnb options available</li>
-        </ul>
+        <p>[Insert accommodation details here]</p>
+    </section>
 
-        <h2>FAQ</h2>
-        <p>Q: Where is the nearest airport?<br>A: Lyon Saint-Exupéry Airport.</p>
-        <p>Q: Is there shuttle service?<br>A: YES.</p>
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>[Insert FAQ here, including Lyon Airport and shuttle information]</p>
+    </section>
 
-        <h2>RSVP</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="shuttle">Will you be using the shuttle?</label>
-            <input type="checkbox" id="shuttle" name="shuttle">
-            <button type="submit">Submit</button>
-        </form>
-
+    <section id="gallery">
         <h2>Gallery</h2>
-        <img src="beaujolais-vineyard1.jpg" alt="Beaujolais Vineyard" />
-        <img src="beaujolais-vineyard2.jpg" alt="Beaujolais Vineyard" />
+        <p>[Insert gallery images here]</p>
     </section>
 
-    <section id="french" style="display:none;">
-        <h2>Lieu : Château de Varennes</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.6638509888916!2d4.444828315527915!3d46.04511207914671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f7b5de421f7351%3A0x79645c2687644c5e!2sCh%C3%A2teau%20de%20Varennes!5e0!3m2!1sen!2sfr!4v1610529341120!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        <h2>Programme</h2>
-        <ul>
-            <li>Cérémonie: 14h</li>
-            <li>Vin d'Honneur: 16h</li>
-            <li>Dîner: 18h</li>
-            <li>Soirée Dansante: 20h</li>
-        </ul>
-
-        <h2>Menu</h2>
-        <ul>
-            <li>Palet Gourmand Foie Gras</li>
-            <li>Volaille de Bresse à la Crème</li>
-            <li>Fromage</li>
-            <li>Dessert</li>
-        </ul>
-
-        <h2>Hébergements</h2>
-        <ul>
-            <li>Le Relais de Monthelon</li>
-            <li>Château de Varennes</li>
-            <li>Hotel Le Saint-George</li>
-            <li>Le Clos de la Fontaine</li>
-            <li>Options Airbnb disponibles</li>
-        </ul>
-
-        <h2>FAQ</h2>
-        <p>Q: Quel est l'aéroport le plus proche?<br>A: Aéroport Lyon Saint-Exupéry.</p>
-        <p>Q: Y a-t-il un service de navette?<br>A: OUI.</p>
-
+    <section id="rsvp">
         <h2>RSVP</h2>
-        <form>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="shuttle">Utiliserez-vous la navette?</label>
-            <input type="checkbox" id="shuttle" name="shuttle">
-            <button type="submit">Soumettre</button>
+        <form action="[RSVP submission URL]" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+            <input type="submit" value="Submit">
         </form>
-
-        <h2>Galerie</h2>
-        <img src="beaujolais-vineyard1.jpg" alt="Vignoble du Beaujolais" />
-        <img src="beaujolais-vineyard2.jpg" alt="Vignoble du Beaujolais" />
     </section>
+
+    <footer>
+        <p>Thank you for visiting our wedding website!</p>
+    </footer>
 </body>
 </html>
